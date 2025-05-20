@@ -1,4 +1,4 @@
-n=int(input("What number do you want to add?"))
+n=int(input("What number do you want to find the factorial of"))
 
 # add=0
 
@@ -13,12 +13,19 @@ n=int(input("What number do you want to add?"))
 #         return n+total(n-1)
 # print(total(n)) 
 
-def fibo(n):
-    if n==0 or n==1:
+# def fibo(n):
+#     if n==0 or n==1:
+#         return n
+#     else:
+#          return fibo(n-1) + fibo(n-2)
+# print(fibo(n)) 
+
+def factorial(n):
+    if n==1:
         return n
     else:
-         return fibo(n-1) + fibo(n-2)
-print(fibo(n))    
+        return factorial(n-1)*n
+print(factorial(n))    
 
 
     
