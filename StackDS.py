@@ -24,25 +24,31 @@ class Stack:
         return len(self.stack)
     def top(self):
         return self.stack[-1]
+    def is_in(self,item):
+        if item in self.stack :
+            return True
+        else:
+            return False   
        
 
 
-my_stack=Stack(3)
-my_stack.show()
-my_stack.push(4)
-my_stack.show()
-my_stack.push(3)
-my_stack.show()
-print(my_stack.top())
-my_stack.push(2)
-my_stack.show()
-my_stack.push(1)
-my_stack.show()
-for i in range(4):
-    i=my_stack.pop()
-    print(i)
-    my_stack.show()
+# my_stack=Stack(3)
+# my_stack.show()
+# my_stack.push(4)
+# my_stack.show()
+# my_stack.push(3)
+# my_stack.show()
+# print(my_stack.top())
+# my_stack.push(2)
+# my_stack.show()
+# my_stack.push(1)
+# my_stack.show()
+# for i in range(4):
+#     i=my_stack.pop()
+#     print(i)
+#     my_stack.show()
 
 
  
         
+
